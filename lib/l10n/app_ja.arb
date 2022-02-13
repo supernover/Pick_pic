@@ -1,0 +1,54 @@
+{
+  "helloWorld": "こんにちは、世界!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "appName": "Photo Puzzle",
+  "@AppName": {
+    "description": "App Name"
+  },
+  "mockUserName": "テスト",
+  "@MockUserName": {
+    "description": "show name without auth"
+  },
+  "userInfoFriend": "友達",
+  "@UserInfoFriend": {
+    "description": "friend text in userInfoPage"
+  },
+  "userInfoPuzzle": "Puzzles",
+  "@UserInfoPuzzles": {
+    "description": "friend text in userInfoPage"
+  },
+  "userInfoPuzzleLike": "いいね",
+  "@likes": {
+    "description": "friend text in userInfoPage"
+  },
+  "userInfoNoneText": "何もないです...",
+  "@UserInfoNoneText": {
+    "description": "when nothing to show..."
+  },
+  "listNone": "今データが無いです",
+  "@listNone": {
+    "description": "when list is none..."
+  },
+  "loginText": "ログイン",
+  "@loginText": {
+    "description": "login button text"
+  },
+  "testText": "テスト",
+  "@TestText": {
+    "description": "login with test mode"
+  },
+  "authText": "認証",
+  "@authText": {
+    "description": "login with auth mode"
+  },
+  "loginLoadingText": "Loading...",
+  "@loginLoadingText": {
+    "description": "login loading text"
+  },
+  "loginSuccessText": "認証成功...",
+  "@loginSuccessText": {
+    "description": "login loading success text"
+  }
+}

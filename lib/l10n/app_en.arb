@@ -1,0 +1,54 @@
+{
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "appName": "Photo Puzzle",
+  "@AppName": {
+    "description": "App Name"
+  },
+  "mockUserName": "Test",
+  "@MockUserName": {
+    "description": "show name without auth"
+  },
+  "userInfoFriend": "Friend",
+  "@UserInfoFriend": {
+    "description": "friend text in userInfoPage"
+  },
+  "userInfoPuzzle": "Puzzles",
+  "@UserInfoPuzzles": {
+    "description": "friend text in userInfoPage"
+  },
+  "userInfoPuzzleLike": "like",
+  "@likes": {
+    "description": "friend text in userInfoPage"
+  },
+  "userInfoNoneText": "there is nothing...",
+  "@UserInfoNoneText": {
+    "description": "when nothing to show..."
+  },
+  "listNone": "NONE",
+  "@listNone": {
+    "description": "when list is none..."
+  },
+  "loginText": "LOGIN",
+  "@loginText": {
+    "description": "login button text"
+  },
+  "testText": "Test",
+  "@TestText": {
+    "description": "login with test mode"
+  },
+  "authText": "Auth",
+  "@authText": {
+    "description": "login with auth mode"
+  },
+  "loginLoadingText": "Loading...",
+  "@loginLoadingText": {
+    "description": "login loading text"
+  },
+  "loginSuccessText": "SUCCESS...",
+  "@loginSuccessText": {
+    "description": "login loading success text"
+  }
+}
