@@ -14,6 +14,9 @@ import 'package:flutter/foundation.dart'
 ///   options: DefaultFirebaseOptions.currentPlatform,
 /// );
 /// ```
+///
+///
+
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -38,33 +41,31 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBkR3IxMRL4oCkewywGtvz0TNto6-MSW-8',
-    appId: '1:826146684437:web:2b9201b550905081c8d81c',
-    messagingSenderId: '826146684437',
-    projectId: 'pick-pic-puzzle',
-    authDomain: 'pick-pic-puzzle.firebaseapp.com',
-    databaseURL: 'https://pick-pic-puzzle-default-rtdb.firebaseio.com',
-    storageBucket: 'pick-pic-puzzle.appspot.com',
-    measurementId: 'G-SH5Q2J9ZT5',
+    apiKey: 'AIzaSyCM2Ka9INqxuvkrKUpTl91d4yh6p9eGaRQ',
+    appId: '1:301008876836:web:498c3cc8e800139b39afb1',
+    messagingSenderId: '301008876836',
+    projectId: 'pick-pic-540a9',
+    authDomain: 'pick-pic-540a9.firebaseapp.com',
+    storageBucket: 'pick-pic-540a9.appspot.com',
+    measurementId: 'G-QSZBDLDF0N',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA_HNBtgfozfjAiJ3JhlKji1OySUcyaZs8',
-    appId: '1:826146684437:android:a2eb907b52946f26c8d81c',
-    messagingSenderId: '826146684437',
-    projectId: 'pick-pic-puzzle',
-    databaseURL: 'https://pick-pic-puzzle-default-rtdb.firebaseio.com',
-    storageBucket: 'pick-pic-puzzle.appspot.com',
+    apiKey: 'AIzaSyBvabAP8PTbbQX5LVGLm_ThfosMjtubEsg',
+    appId: '1:301008876836:android:0529c43d0e26207639afb1',
+    messagingSenderId: '301008876836',
+    projectId: 'pick-pic-540a9',
+    storageBucket: 'pick-pic-540a9.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCN4SUM_l8FsSELWNCC2FVkDDFdeskalho',
-    appId: '1:826146684437:ios:4955d0a1540f1e47c8d81c',
-    messagingSenderId: '826146684437',
-    projectId: 'pick-pic-puzzle',
-    databaseURL: 'https://pick-pic-puzzle-default-rtdb.firebaseio.com',
-    storageBucket: 'pick-pic-puzzle.appspot.com',
-    iosClientId: '826146684437-sa19835qlnb55t7024jaob4i0arvrpm2.apps.googleusercontent.com',
+    apiKey: 'AIzaSyA7llUPF6gJiIqFi6FYPhF3r9CEQ64_zeg',
+    appId: '1:301008876836:ios:09e8f7fc851a4dd539afb1',
+    messagingSenderId: '301008876836',
+    projectId: 'pick-pic-540a9',
+    storageBucket: 'pick-pic-540a9.appspot.com',
+    iosClientId:
+        '301008876836-ovrp7u03ov2heen0u1al9jjq9uo2oud1.apps.googleusercontent.com',
     iosBundleId: 'com.example.pick',
   );
 }
