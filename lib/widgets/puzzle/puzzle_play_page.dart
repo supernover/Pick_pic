@@ -32,42 +32,45 @@ class PuzzlePlayState extends State<PuzzlePlayPage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Scaffold(
-      backgroundColor: Colors.transparent,
-      body: _buildBody(size),
-      floatingActionButton: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          FloatingActionButton(
-            heroTag: 'float',
-            backgroundColor: Theme.of(context).accentColor,
-            onPressed: () {
-              context.read(numberVisibleProvider).state ^= true;
-              ;
-            },
-            child: SvgPicture.asset(
-              'assets/icons/point.svg',
-              width: smallSize,
-              height: smallSize,
-              color: Theme.of(context).primaryColor,
+    return SafeArea(
+      child: Scaffold(
+        resizeToAvoidBottomInset: false,
+        backgroundColor: Colors.transparent,
+        body: _buildBody(size),
+        floatingActionButton: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            FloatingActionButton(
+              heroTag: 'float',
+              backgroundColor: Theme.of(context).accentColor,
+              onPressed: () {
+                context.read(numberVisibleProvider).state ^= true;
+                ;
+              },
+              child: SvgPicture.asset(
+                'assets/icons/point.svg',
+                width: smallSize,
+                height: smallSize,
+                color: Theme.of(context).primaryColor,
+              ),
             ),
-          ),
-          SizedBox(
-            width: smallSize,
-          ),
-          FloatingActionButton(
-            backgroundColor: Theme.of(context).accentColor,
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            child: SvgPicture.asset(
-              'assets/icons/back.svg',
+            SizedBox(
               width: smallSize,
-              height: smallSize,
-              color: Theme.of(context).primaryColor,
             ),
-          )
-        ],
+            FloatingActionButton(
+              backgroundColor: Theme.of(context).accentColor,
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: SvgPicture.asset(
+                'assets/icons/back.svg',
+                width: smallSize,
+                height: smallSize,
+                color: Theme.of(context).primaryColor,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
@@ -80,11 +83,13 @@ class PuzzlePlayState extends State<PuzzlePlayPage> {
               image: Image.asset('assets/images/bg_puzzle.jpg').image)),
       height: size.height,
       width: size.width,
-      child: Column(
-        children: [
-          _buildTimeBoard(size),
-          _buildGameBoard(size),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            _buildTimeBoard(size),
+            _buildGameBoard(size),
+          ],
+        ),
       ),
     );
   }
@@ -114,19 +119,21 @@ class PuzzlePlayState extends State<PuzzlePlayPage> {
           final value = snap.data;
           final displayTime =
               StopWatchTimer.getDisplayTime(value!, milliSecond: false);
-          return Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(8),
-                child: Text(
-                  displayTime,
-                  style: TextStyle(
-                      fontSize: bigMediumText,
-                      fontFamily: 'Helvetica',
-                      fontWeight: FontWeight.bold),
+          return SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: Text(
+                    displayTime,
+                    style: TextStyle(
+                        fontSize: bigMediumText,
+                        fontFamily: 'Helvetica',
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           );
         },
       ),

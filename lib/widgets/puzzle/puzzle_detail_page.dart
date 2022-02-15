@@ -1,4 +1,5 @@
 import 'dart:typed_data';
+import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -27,10 +28,11 @@ class PuzzleDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Container(
-              width: size.width,
+              width: size.height,
               height: size.height,
               child: CachedNetworkImage(
                 fit: BoxFit.cover,
@@ -64,32 +66,34 @@ class PuzzleDetailsPage extends StatelessWidget {
         });
     return Container(
       color: Theme.of(context).primaryColor.withOpacity(0.6),
-      width: size.width,
-      child: Column(
-        children: <Widget>[
-          Stack(
-            children: [
-              _buildImage(context, size),
-              Positioned(
-                  top: 100,
-                  left: 100,
-                  child: Text(
-                    'tips',
-                    style: Theme.of(context).textTheme.bodyText1,
-                  ))
-            ],
-          ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: smallPadding),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+      height: size.height,
+      child: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Stack(
               children: [
-                _buildButton(size, context),
-                _buildBoard(context, size)
+                _buildImage(context, size),
+                Positioned(
+                    top: 100,
+                    left: 100,
+                    child: Text(
+                      'tips',
+                      style: Theme.of(context).textTheme.bodyText1,
+                    ))
               ],
             ),
-          ),
-        ],
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: smallPadding),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  _buildButton(size, context),
+                  _buildBoard(context, size)
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -180,14 +184,14 @@ class PuzzleDetailsPage extends StatelessWidget {
                 children: [
                   MyCircleButton(
                     width: size.width / 6,
-                    text: 'X',
+                    text: 'Exit',
                     press: () {
                       Navigator.pop(context, true);
                     },
                   ),
                   MyCircleButton(
                     width: size.width / 6,
-                    text: 'O',
+                    text: 'Play',
                     press: () async {
                       Uint8List bytes =
                           await ImageUtil.networkImageToBase64(imageUrl);
