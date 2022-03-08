@@ -19,18 +19,31 @@ A new Flutter project.
 > No Android SDK found. Try setting the ANDROID_SDK_ROOT environment variable.
 
 @Android SDK:warning:  install  Android SDK 
+
+[Android app](https://docs.flutter.dev/deployment/android). :calling:
+
 ```
 
 1. Enter cd [project]
 2. Run flutter build apk --split-per-abi
 ```
 
+
 ## Build and release an iOS app
 
 > iOS  project is functioned well and all you need is to follow these instructions only :trophy: :
   
+
+[iOS app](https://docs.flutter.dev/deployment/ios). :iphone:
+
+
+
+## Build and release an iOS app
+
+> iOS  project is functioned well and all you need is to follow these instructions only :trophy: :
   
-[](https://docs.flutter.dev/deployment/ios)
+
+> [Windows ](https://docs.flutter.dev/deployment/windows). :computer:
 
 
 This guide provides a step-by-step walkthrough of releasing a Flutter app to the  App Store and TestFlight.
