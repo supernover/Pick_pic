@@ -1,3 +1,7 @@
+ > If you want to contribute to this project and make it better, your help is very welcome. 
+
+[I turned it into a Github repo so you can, you know, contribute to it by making pull requests.](https://github.com/MarcDiethelm/contributing/blob/master/README.md)
+
 <h1 align="center">Pick pictures </h1>
 
 <p align="center">
