@@ -1,8 +1,11 @@
+ [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/macyenga)
+
  > If you want to contribute to this project and make it better, your help is very welcome. 
 
 [I turned it into a Github repo so you can, you know, contribute to it by making pull requests.](https://github.com/MarcDiethelm/contributing/blob/master/README.md)
 
-<h1 align="center">Pick pictures </h1>
+<h1 align="center">Pick pictures slide puzzle </h1>
+<p align="center">Participate in Flutter Puzzle Hack</p>
 
 <p align="center">
 
