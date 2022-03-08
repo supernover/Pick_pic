@@ -9,11 +9,10 @@ A new Flutter project.
 
 > This site was built using [Flutter SDK - App Development Toolkit](https://flutter.dev/?gclid=Cj0KCQiA95aRBhCsARIsAC2xvfzYFLcIVU5-o2V_8OwPG6lka8ZIG502zlYqtLEsoQq-C8SF7y7gDZEaAhf9EALw_wcB&gclsrc=aw.ds).
 
-### Build an APK
+### Build and release an Android app
 
 > Android project is functioned well and all you need is to follow these instructions only:trophy: :
 
-### Build and release an Android app
 
 [x]
 
