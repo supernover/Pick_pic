@@ -13,17 +13,18 @@ A new Flutter project.
 
 Android project is functioned well and all you need is to follow these instructions only:trophy: :
 
-```
-Build and release an Android app
-```
+### Build and release an Android app
+
 [x]
 
 > No Android SDK found. Try setting the ANDROID_SDK_ROOT environment variable.
 
 @Android SDK:warning:  install  Android SDK 
+```
 
 1. Enter cd [project]
 2. Run flutter build apk --split-per-abi
+```
 
 ## Build and release an iOS app
 
