@@ -11,7 +11,7 @@ A new Flutter project.
 
 ### Build an APK
 
-Android project is functioned well and all you need is to follow these instructions only:trophy: :
+> Android project is functioned well and all you need is to follow these instructions only:trophy: :
 
 ### Build and release an Android app
 
