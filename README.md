@@ -25,6 +25,8 @@ On your device or  on the web, you can play and discover thousands of slide pict
 or letters on that pieces of photo 📸, this type of change can be applied to all puzzle games  , also. Everyone's always looking for ways to dramatically improve  their skills in  puzzle games, so  this  How Will You Measure Your skills about the game because When you play this game , you get a score of how good you are compared to others_
 ```
 
+![Demo](https://github.com/supernover/Pick_pic/blob/main/screenshoots/GifTuto1.gif)
+![Demo](https://github.com/supernover/Pick_pic/blob/main/screenshoots/GifTuto2.gif)
 
 
 ##  ⚙  How we built it
