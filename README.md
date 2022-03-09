@@ -147,12 +147,12 @@ _There are plenty ways to continue with this project. The main goals would be ex
 Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better?
 To start contributing, follow the below guidelines:
 
-**1.** Fork [this](https://github.com/smaranjitghose/DocLense) repository.
+**1.** Fork [this](https://github.com/supernover/Pick_pic) repository.
 
 **2.** Clone your forked copy of the project.
 
 ```
-git clone --depth 1 https://github.com/<your_user_name>/DocLense.git
+git clone --depth 1 https://github.com/<your_user_name>/Pick_pic.git
 ```
 
 <img src="./readme_assets/CloneRepo.png" width="500">
@@ -160,13 +160,13 @@ git clone --depth 1 https://github.com/<your_user_name>/DocLense.git
 **3.** Navigate to the project directory :file_folder: .
 
 ```
-cd DocLense
+cd Pick_pic
 ```
 
 **4.** Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream https://github.com/smaranjitghose/DocLense.git
+git remote add upstream https://github.com/supernover/Pick_pic.git
 ```
 
 **5.** Check the remotes for this repository.
